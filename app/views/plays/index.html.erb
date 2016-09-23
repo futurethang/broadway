@@ -1,3 +1,4 @@
 <% @plays.each do |play| %>
   <h2><%= link_to play.title, play_path(play) %></h2>
+  <h5><%= play.category.name %></h5>
 <% end %>
